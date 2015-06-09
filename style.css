@@ -1,0 +1,29 @@
+/*
+Theme Name: Mothernist
+Theme URI: http://www.mothernist.com
+Description: Theme for Mothernsit.
+Author: MediaParticle
+Author URI: http://www.mediaparticle.com/
+Version: 1.0
+Tags: mothernist
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+*/
+
+html, body 
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
