@@ -372,6 +372,15 @@
         )
     ) );
 
+
+    // -> START Promos Section
+    Redux::setSection( $opt_name, array(
+        'title' => __( 'Promos Section', 'redux-framework-demo' ),
+        'id'    => 'promos-section',
+        'desc'  => __( '', 'redux-framework-demo' ),
+        'icon'  => 'el el-home'
+    ) );
+
     
     // -> START Typography field
     Redux::setSection( $opt_name, array(

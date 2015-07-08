@@ -1,31 +1,26 @@
-
 <?php get_header(); ?>
+  
+  <div class="container-fluid no-pad">
+    <?php echo get_template_part( '/includes/template/featured-slider' ); ?>
+  </div>
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1><?php echo $mothernist_config['opt-title']; ?></h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-      </div>
+  <div class="container" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
-      <!-- Example row of columns -->
+    <?php echo get_template_part( '/includes/template/promo-area' ); ?>
+
+    <section id="content-area">
       <div class="row">
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+        <div class="col-sm-8">
+          <!-- editor picks -->
+          <?php echo get_template_part( '/includes/template/editor-picks' ); ?>
         </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+        <div class="col-sm-4">
+          <!-- sidebar widget -->
+          <?php get_sidebar(); ?> 
         </div>
       </div>
-    </div> <!-- /container -->
+    </section>
+
+  </div><!-- /container -->
 
 <?php get_footer(); ?>

@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+
+
+}
+
+@media (max-width: 480px) {
+
+	.featured-slider .play-btn
+	{
+		left: 40%;
+	}
+}
