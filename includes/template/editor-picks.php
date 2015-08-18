@@ -35,7 +35,7 @@
 	      		{
 	      			echo '<div class="col-sm-12">
 	      				<div class="picks-img">
-							<div class="overlay img-responsive"></div>
+							'.custom_link_overlay().'
 							'.get_the_post_thumbnail($post->ID,"full", array("class" => "img-responsive")).'
 						</div>
 						<div class="picks-desc text-left">
@@ -47,7 +47,7 @@
 	      		{
 	      			echo '<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 picks-item">
 						<div class="picks-img">
-							<div class="overlay img-responsive"></div>
+							'.custom_link_overlay().'
 							'.get_the_post_thumbnail($post->ID,"full", array("class" => "img-responsive")).'
 						</div>
 						<div class="picks-desc text-left">
@@ -65,7 +65,7 @@
 
 	    else :
 	      
-	      echo '<p>Something must have been wrong!</p>';
+	     	echo get_template_part( '/includes/template/page-not-found' ); 
 
 	    endif;
 

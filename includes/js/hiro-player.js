@@ -1,5 +1,5 @@
 var init_hiro_player = function(videoUrl, videoPoster, currentObj) {
-  		
+
 	currentObj.append('<div id="hiro_player" class="hiro"></div>');
 
 	hiro.ready(function() {

@@ -1,0 +1,516 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Contact Form 7 Storage plugin for WordPress</title>
+
+</head>
+<body>
+<h1>Contact Form 7 Storage plugin for WordPress</h1>
+
+<p><strong>Contact Form 7 Storage plugin stores copies of all Contact Form 7 submissions (including attachments) in your WordPress database.</strong> All form entries and leads will be stored safely even if your e-mail goes down or e-mail messages go missing or get deleted.</p>
+
+<p><strong>New in 1.4.3:</strong> Add form field names as column headers in the CSV export.</p>
+
+<p>This plugin is developed and maintained by <a href="http://kaspars.net">Kaspars Dambis</a> who is a WordPress core contributor and professional WordPress consultant since 2007.</p>
+
+<h2>Features</h2>
+
+<p><strong>All form submissions are stored in the WordPress backend in addition to being sent via e-mail.</strong> E-mail delivery is never 100% reliable and having a backup of all contact entries will ensure you never miss a lead or inquiry.</p>
+
+<p><img src="http://preseto.com/wp-content/uploads/2014/05/01_screenshot.png" alt="List of all contact form submissions" /></p>
+
+<p><strong>Export form submissions as CSV.</strong> Export all submissions or use the date and form filters to select which entries you want to export. Export also includes links to entry attachments.</p>
+
+<p><img src="http://preseto.com/wp-content/uploads/2014/05/03_screenshot.png" alt="CSV export of Contact Form 7 entries" /></p>
+
+<p><strong>Each entry also stores the following details about the submission:</strong></p>
+
+<ul>
+<li>Time and date of the entry.</li>
+<li>E-mail address of the contact form recipient.</li>
+<li>Subject line of the e-mail that was sent to the contact form recipient.</li>
+<li>All attachments uploaded to the contact form.</li>
+<li>Post or page URL where the contact form was submitted (referrer).</li>
+<li>IP address, browser and device information (user-agent) of the submission.</li>
+<li>Link to the setup page of the contact form that was used for submission.</li>
+</ul>
+
+
+<p><img src="http://preseto.com/wp-content/uploads/2014/05/02_screenshot.png" alt="Single contact form submission" /></p>
+
+<h2>Installation</h2>
+
+<ol>
+<li>Select <em>"Plugins > Add New"</em> from the main menu in your WordPress dashboard.</li>
+<li>Select the <em>"Upload"</em> tab at the top of the page.</li>
+<li>Select the <em>cf7-storage.zip</em> file for the upload and click <em>"Upload"</em>.</li>
+<li>Be sure to activate the plugin once it has been uploaded.</li>
+</ol>
+
+
+<h2>Usage</h2>
+
+<p><strong>This plugin adds a new section called “Entries” under the "Contact" menu</strong> in the WordPress dashboard which lists all of the contact form submissions in a reverse chronological order. Quick preview of each entry to avoid extra clicks.</p>
+
+<p><strong>Dropdown selectors at the top of the list provide filtering and sorting of the contact form entries</strong> by the contact form used for submission and the date of submission.</p>
+
+<p><strong>Export entries as CSV</strong> by using the "Export as CSV" button at the top of the submission list. Use the dropdown filters or the bulk action dropdown selector to select which submissions to export.</p>
+
+<p><strong>Free form text search is also available</strong> for finding a specific entry.</p>
+
+<p><strong>Reference entry ID and entry URL in the e-mails</strong> that get sent to the admin:</p>
+
+<ul>
+<li><code>[storage_entry_id]</code> is replaced with a unique entry ID such as 3212, and</li>
+<li><code>[storage_entry_url]</code> generates a link to the entry in the backend accessible only to registered users.</li>
+</ul>
+
+
+<p>Please note that Contact Form 7 doesn't support wrapping variables in square brackets <code>[]</code> such as <code>[[storage_entry_id]]</code>. Please use another set of characters (for example <code>{}</code> or <code>()</code>).</p>
+
+<h2>Automatic Updates</h2>
+
+<p>Install the <a href="https://github.com/envato/envato-wordpress-toolkit">Envato WordPress Toolkit plugin</a> to enable automatic updates of this plugin right from your WordPress dashboard. Don't forget to specify your API key and CodeCanyon username in the "Envato Toolkit" settings page.</p>
+
+<h2>Requirements</h2>
+
+<ul>
+<li>Requires at least: WordPress 3.2</li>
+<li>Tested up to: WordPress 4.0</li>
+</ul>
+
+
+<h2>Screenshots</h2>
+
+<ol>
+<li>List of all form submissions.</li>
+<li>Detailed view of each submission.</li>
+<li>CSV export of form submissions.</li>
+</ol>
+
+
+<h2>Support</h2>
+
+<p>Please use the <a href="http://codecanyon.net/item/storage-for-contact-form-7-/7806229/support">dedicated support section on CodeCanyon</a></a>.</p>
+
+<h2>Changelog</h2>
+
+<h3>1.4.3</h3>
+
+<ul>
+<li>Add form input field names as column headers in the CSV export.</li>
+</ul>
+
+
+<h3>1.4.2</h3>
+
+<ul>
+<li>Add support for fields with multiple values (checkboxes, radio) to CSV export too.</li>
+</ul>
+
+
+<h3>1.4.1</h3>
+
+<ul>
+<li>Add support for fields with multiple values (checkboxes, radio) in the entry view.</li>
+</ul>
+
+
+<h3>1.4</h3>
+
+<ul>
+<li>Enable <code>[storage_entry_id]</code> and <code>[storage_entry_url]</code> mail tags.</li>
+<li>Fix issue with upload filename backslashes being removed on Windows servers.</li>
+</ul>
+
+
+<h3>1.3.8</h3>
+
+<ul>
+<li>Don't store the mail 2 which is usually sent as a receipt to the user.</li>
+</ul>
+
+
+<h3>1.3.7</h3>
+
+<ul>
+<li>Include automatic update library which was missing in 1.3.6.</li>
+</ul>
+
+
+<h3>1.3.6</h3>
+
+<ul>
+<li>Show uploaded files in the backend even if they were not mailed.</li>
+</ul>
+
+
+<h3>1.3.4</h3>
+
+<ul>
+<li>More reliable automatic updates.</li>
+</ul>
+
+
+<h3>1.3.3</h3>
+
+<ul>
+<li>Bugfix: Include all available contact forms in the drop-down filter.</li>
+</ul>
+
+
+<h3>1.3.2</h3>
+
+<ul>
+<li>Style table columns in the admin index view.</li>
+</ul>
+
+
+<h3>1.3.1</h3>
+
+<ul>
+<li>Include entry subject in the admin index view.</li>
+<li>Enable quick preview of entry content from the admin index view.</li>
+</ul>
+
+
+<h3>1.3</h3>
+
+<ul>
+<li>Enable automatic updates via the <a href="https://github.com/envato/envato-wordpress-toolkit">Envato WordPress Toolkit plugin</a>.</li>
+</ul>
+
+
+<h3>1.2</h3>
+
+<ul>
+<li>Support for Contact Form 7 version 3.9.</li>
+</ul>
+
+
+<h3>1.1.0</h3>
+
+<ul>
+<li>Add entry export functionality.</li>
+</ul>
+
+
+<h3>1.0.3</h3>
+
+<ul>
+<li>Add support for localization.</li>
+<li>Add Latvian translation.</li>
+</ul>
+
+
+<h3>1.0.1</h3>
+
+<ul>
+<li>Simplify the readme file.</li>
+</ul>
+
+
+<h3>1.0</h3>
+
+<ul>
+<li>Initial release.</li>
+</ul>
+
+
+<h2>Extras for Contact Form 7</h2>
+
+<p><a href="https://wordpress.org/plugins/contact-form-7-extras/">Extras for Contact Form 7</a> is a free plugin that will add simple controls for the advanced functionality of the Contact Form 7 plugin, such as disabling AJAX form submissions, default CSS, automatic paragraph formatting, adding Google Analytics tracking and redirection on form submissions. Simply search for <strong>Extras for Contact Form 7</strong> in your WordPress dashboard.</p>
+</body>
+</html>

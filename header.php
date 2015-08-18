@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><?php echo get_theme_title();?></title>
+    <title><?php wp_title(); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mothernist">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -36,8 +36,10 @@
 
     <header id="header" itemscope itemtype="http://schema.org/WPHeader">
 
-      <section class="row-fluid cover-image" style="text-align:center; padding-top:30px; padding-bottom:30px;">
-        <img id="logo" src="<?php echo get_theme_logo(); ?>">
+      <section class="row-fluid cover-image header-logo" >
+        <a href="<?php echo get_home_url(); ?>">
+          <img id="logo" src="<?php echo get_theme_logo(); ?>">
+        </a>
       </section>
 
       <nav class="navbar navbar-default navbar-static-top" itemscope itemtype="http://schema.org/SiteNavigationElement">
@@ -49,14 +51,11 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand visible-xs" href="<?php echo home_url(); ?>">
-              <img id="logo" src="<?php echo get_theme_logo(); ?>">
-            </a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <?php
               wp_nav_menu( array(
-                'menu' => 'top_menu',
+                'menu' => 'main-menu',
                 'depth' => 2,
                 'container' => false,
                 'menu_class' => 'nav navbar-nav',
@@ -66,4 +65,5 @@
           </div><!--/.nav-collapse -->
         </div>
       </nav>
+      
     </header>

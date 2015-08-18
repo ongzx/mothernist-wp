@@ -1,0 +1,272 @@
+# Copyright (C) 2014 Contact Form 7 Storage
+# This file is distributed under the same license as the Contact Form 7 Storage package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Contact Form 7 Storage 1.0.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/git\n"
+"POT-Creation-Date: 2014-10-21 15:01:44+00:00\n"
+"PO-Revision-Date: 2014-10-21 18:03+0200\n"
+"Last-Translator: Kaspars <hi@kaspars.net>\n"
+"Language-Team: Latvian <LL@li.org>\n"
+"Language: lv_LV\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+
+#: cf7-storage.php:94 cf7-storage.php:323
+msgid "Entries"
+msgstr "Ieraksti"
+
+#: cf7-storage.php:322 cf7-storage.php:602
+msgid "Contact Form Entries"
+msgstr "Kontaktu formu ieraksti"
+
+#: cf7-storage.php:449
+msgid "You are not allowed to move this item to Trash."
+msgstr "Jums nav atļauts pārvietot šo vienību uz miskasti."
+
+#: cf7-storage.php:452
+msgid "Error moving an item to Trash."
+msgstr "Kļūda pārvietojot vienību uz miskasti."
+
+#: cf7-storage.php:468
+msgid "You are not allowed to restore this item from Trash."
+msgstr "Jums nav tiesību atjaunot šo vienību no miskastes."
+
+#: cf7-storage.php:471
+msgid "Error in restoring an item from Trash."
+msgstr "Kļūda atjaunojot vienību no miskastes."
+
+#: cf7-storage.php:488
+msgid "You are not allowed to delete this entry."
+msgstr "Jums nav atļauts dzēst šo ierakstu."
+
+#: cf7-storage.php:491
+msgid "Error in deleting an entry."
+msgstr "Kļūda dzēšot ierakstu."
+
+#: cf7-storage.php:570
+msgid "Missing entry ID."
+msgstr "Trūkst vienības ID."
+
+#: cf7-storage.php:609
+msgid "Search results for \"%s\""
+msgstr "Rezultāti meklējot \"%s\""
+
+#: cf7-storage.php:625
+msgid "Search Entries"
+msgstr "Meklēt ierakstos"
+
+#: cf7-storage.php:641
+msgid "This contact form submission doesn't exist!"
+msgstr "Šāds kontaktu formas ieraksts neeksistē!"
+
+#: cf7-storage.php:674 cf7-storage.php:913
+msgctxt "No attachments found"
+msgid "None"
+msgstr "Tukšs"
+
+#: cf7-storage.php:682 inc/admin-list-view.php:64
+msgid "Contact Form"
+msgstr "Contaktu forma"
+
+#: cf7-storage.php:690 cf7-storage.php:876
+msgid "From"
+msgstr "No"
+
+#: cf7-storage.php:694 cf7-storage.php:877
+msgid "To"
+msgstr "Kam"
+
+#: cf7-storage.php:698 cf7-storage.php:875 inc/admin-list-view.php:65
+msgid "Date"
+msgstr "Datums"
+
+#: cf7-storage.php:706 cf7-storage.php:878
+msgid "Subject"
+msgstr "Temats"
+
+#: cf7-storage.php:710
+msgid "Message"
+msgstr "Ziņojums"
+
+#: cf7-storage.php:717 cf7-storage.php:880
+msgid "Attachments"
+msgstr "Pielikumi"
+
+#: cf7-storage.php:766
+msgid "No field values were captured."
+msgstr "Nav saglabāta neviena lauka vērtība."
+
+#: cf7-storage.php:775
+msgid "Post"
+msgstr "Ieraksts"
+
+#: cf7-storage.php:782 cf7-storage.php:796 cf7-storage.php:884
+msgid "Referer"
+msgstr "Avots"
+
+#: cf7-storage.php:801
+msgid "Visit"
+msgstr "Apmeklēt"
+
+#: cf7-storage.php:808
+msgid "User agent"
+msgstr "Pārlūks"
+
+#: cf7-storage.php:815
+msgid "IP Address"
+msgstr "IP adrese"
+
+#: cf7-storage.php:855
+msgid "Form Submission"
+msgstr "Formas ieraksts"
+
+#: cf7-storage.php:857
+msgid "Field Values"
+msgstr "Lauku vērtības"
+
+#: cf7-storage.php:859
+msgid "Submission Details"
+msgstr "Ieraksta detaļas"
+
+#: cf7-storage.php:879
+msgid "Body"
+msgstr "Ziņojums"
+
+#: cf7-storage.php:881
+msgid "Form Name"
+msgstr "Formas nosaukums"
+
+#: cf7-storage.php:882
+msgid "Entry ID"
+msgstr "Ieraksta ID"
+
+#: cf7-storage.php:883
+msgid "Entry URL"
+msgstr "Ieraksta URL"
+
+#: cf7-storage.php:885
+msgid "User-agent"
+msgstr "Pārlūks"
+
+#: cf7-storage.php:969
+msgid ""
+"Storage for Contact Form 7 requires the latest version of Contact Form 7 "
+"plugin."
+msgstr ""
+"Contact Form 7 glabātuvei ir nepieciešama jaunākā Contact Form 7 spraudņa "
+"versija."
+
+#: inc/admin-list-view.php:63
+msgid "Entry"
+msgstr "Ieraksts"
+
+#: inc/admin-list-view.php:87
+msgid "All"
+msgstr "Visi"
+
+#: inc/admin-list-view.php:118 inc/admin-list-view.php:171
+msgid "Restore"
+msgstr "Atjaunot"
+
+#: inc/admin-list-view.php:121 inc/admin-list-view.php:183
+msgid "Delete Permanently"
+msgstr "Izdzēst pavisam"
+
+#: inc/admin-list-view.php:123
+msgid "Move to Trash"
+msgstr "Ielikt miskastē"
+
+#: inc/admin-list-view.php:125 inc/admin-list-view.php:177
+#: inc/admin-list-view.php:197 inc/admin-list-view.php:327
+msgid "Export as CSV"
+msgstr "Eksportēt CSV"
+
+#: inc/admin-list-view.php:163
+msgid "Preview"
+msgstr "Priekšskatīt"
+
+#: inc/admin-list-view.php:191
+msgid "View"
+msgstr "Skatīt"
+
+#: inc/admin-list-view.php:203
+msgid "Trash"
+msgstr "Miskaste"
+
+#: inc/admin-list-view.php:229
+msgid "View this submission from %s"
+msgstr "Skatīt ierakstu no %s"
+
+#: inc/admin-list-view.php:247
+msgid "%s ago"
+msgstr "%s atpakaļ"
+
+#: inc/admin-list-view.php:297
+msgid "All Contact Forms"
+msgstr "Visas kontaktu formas"
+
+#: inc/admin-list-view.php:317
+msgid "Filter"
+msgstr "Filtrēt"
+
+#: inc/admin-list-view.php:340
+msgid "Empty Trash"
+msgstr "Iztīrīt miskasti"
+
+#: lib/envato-automatic-plugin-update/envato-plugin-update.php:167
+msgid "Failed to retreive plugin details from the Envato API."
+msgstr "Neizdevās iegūt spraudņa informāciju no Envato API."
+
+#: lib/envato-automatic-plugin-update/envato-plugin-update.php:176
+msgid "New version of <strong>%s</strong> is available."
+msgstr "<strong>%s</strong> ir pieejama jauna versija."
+
+#. Plugin Name of the plugin/theme
+msgid "Contact Form 7 Storage"
+msgstr "Contact Form 7 glabātuve"
+
+#. Plugin URI of the plugin/theme
+msgid "http://preseto.com/plugins/contact-form-7-storage"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Store all Contact Form 7 submissions (including attachments) in your "
+"WordPress dashboard."
+msgstr ""
+"Saglabā visus Contact Form 7 ierakstus (ieskaitot pielikumus) savā WordPress "
+"administrācijas panelī."
+
+#. Author of the plugin/theme
+msgid "Kaspars Dambis"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://kaspars.net"
+msgstr ""
+
+#~ msgid "Form"
+#~ msgstr "Forma"
+
+#~ msgid "From:"
+#~ msgstr "No:"
+
+#~ msgid "To:"
+#~ msgstr "Kam:"
+
+#~ msgid "Date:"
+#~ msgstr "Datums:"
+
+#~ msgid "Subject:"
+#~ msgstr "Temats:"
+
+#~ msgid "Attachments:"
+#~ msgstr "Pielikumi:"
+
+#~ msgid "Referer:"
+#~ msgstr "Avots:"

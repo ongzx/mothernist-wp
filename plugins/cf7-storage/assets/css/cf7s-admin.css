@@ -1,0 +1,17 @@
+.cf7s-entry { width:100%; font-size:1.1em; margin-top:0.5em; }
+.cf7s-entry th { text-align:right; font-weight:normal; padding-right:0.5em; color:#999; width:110px; }
+.cf7s-entry th, .cf7s-entry td { vertical-align:top; padding-top:0.25em; padding-bottom:0.25em; }
+.cf7s-from td { font-weight:bold; }
+.cf7s-body th { visibility:hidden; }
+.cf7s-body .body-content-wrap { background:#fff; margin:1em 0 1em -1em; padding:0 1em; border:1px solid #ddd; }
+.cf7s-user-agent td { font-size:0.9em; font-family:monospace; }
+.cf7s-attachments ul { margin:0; }
+.cfs7-entry-wrap h3 { font-size:1.1em; margin-bottom:0; padding-top:1em; border-top:1px solid #ddd; }
+.cfs7-entry-wrap h3, .cf7s-form-fields-empty td { padding-left:122px; }
+.wp-list-table .entry-from { color:#666; margin:0; font-size:inherit; font-weight:normal; }
+.wp-list-table .entry-subject { color:inherit; margin:0; font-size:1.1em; }
+.row-entry-preview { color:inherit; display:none; margin:0.5em 0 0.5em 0; padding:0.5em 1em 0 1em; background-color:#fff; border:1px solid #ddd; }
+.row-entry-preview.expanded { display:block; }
+
+table #contact_form { width:25%; }
+table #date { width:15%; }

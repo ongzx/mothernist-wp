@@ -1,0 +1,140 @@
+/*------------------------------------------------*/
+/* Minimal Quiz Style                             */
+/*------------------------------------------------*/
+.wpss{ }
+
+/* Hide questions on load, show first question. */
+.wpss .wpss-hidden{ display: none; }
+.wpss .wpss_panel_1{ display: block; }
+
+/* Next and Previous Buttons */
+.wpss .wpss_prev_next{
+  text-align:center;  
+}
+.wpss .wpss_prev_next a.wpss_disabled, .wpss .wpss_prev_next a.wpss_disabled:hover{
+  cursor: default;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.wpss-clear{ float:none; clear: both; }
+
+.wpss fieldset{
+  border: 1px solid #c0c0c0;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.wpss_prev_next a {margin: 0 15px;}
+
+/*------------------------------------------------*/
+/* Question Field Styling                         */
+/*------------------------------------------------*/
+
+.wpss .wpss-question img{
+  margin: 5px 0;  
+}
+
+.wpss .wpss-question img.alignright{
+  margin: 5px 0;
+}
+.wpss .wpss-question img.aligncenter{
+  margin: 5px auto;  
+}
+
+.wpss .wpss-question img.alignnone{
+  display: block;
+}
+
+.wpss .wpss-question .wp-caption.alignright{
+  margin: 5px 0;
+}
+
+
+/*------------------------------------------------*/
+/* Answer Field Styling                           */
+/*------------------------------------------------*/
+
+.wpss textarea{
+  width: 100%;  
+  min-height: 120px;
+}
+
+.wpss .answers label img{
+  margin: 5px 0;  
+}
+
+.wpss .answers label img.aligncenter{
+  margin: 5px auto;  
+}
+
+.wpss .answers label img.alignnone{
+  display: block;
+}
+
+/*------------------------------------------------*/
+/* Custom Field Styling                           */
+/*------------------------------------------------*/
+
+.wpss .wpss-fields{ margin-bottom: 15px; }
+
+.wpss .wpss-fields .wpss-field{ }
+
+.wpss .wpss-fields label{ display:block; }
+
+.wpss-field {  margin-bottom: 5px; }
+
+.wpss .wpss-submit-message{ margin-bottom: 10px; }
+
+/* Uncomment to float fields to the right of their labels. */
+/*
+.wpss .wpss-fields label{ display: inline; }
+.wpss .wpss-fields input[type='text'], .wpss .wpss-fields input[type='email'] { float:right; }
+*/
+
+
+
+/*------------------------------------------------*/
+/* Progress Bar                                   */
+/*------------------------------------------------*/
+.wpss .wpss-progress-bar { 
+  display: block;
+  border: 1px solid #c0c0c0;
+  margin: 5px 0;
+  padding: 5px;
+  height: 15px;
+}
+
+.wpss .wpss-progress-bar span{
+  display: block;
+  height: 100%;
+  width: 0;
+  background-color: #c0c0c0;  
+}
+
+/*------------------------------------------------*/
+/* Routed to page styling for results             */
+/*------------------------------------------------*/
+
+/* Score */
+.wpss_results_score{ margin-bottom: 15px; }
+
+
+/* Full Results */
+.wpss_results_qa{ }
+
+.wpss_results_qa .wpss_results_answer{ 
+  margin-bottom: 15px;
+}
+
+.wpss_results_qa .wpss_results_answer .wpss_results_question_text{ }
+
+.wpss_results_qa .wpss_results_answer .wpss_results_answer_text{ }
+
+.wpss_results_qa .wpss_results_answer .wpss_results_answer_score{ }
+
+.wpss_results_qa .wpss_results_answer .wpss_results_answer_score span{ }
+
+.wpss_results_qa .wpss_results_answer .wpss_results_answer_score span.score_label{ }
+
+.wpss_results_qa .wpss_results_answer .wpss_results_answer_score span.score{ }

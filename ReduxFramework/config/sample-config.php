@@ -346,6 +346,21 @@
                 //)
             ),
             array(
+                'id'       => 'opt-logo-footer',
+                'type'     => 'media',
+                'url'      => true,
+                'title'    => __( 'Footer Logo', 'redux-framework-demo' ),
+                'compiler' => 'true',
+                //'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+                'desc'     => __( '' ),
+                'subtitle' => __( 'Upload a logo for your theme, or specify the image address of your online logo.', 'redux-framework-demo' ),
+                'default'  => array( 'url' => 'http://s.wordpress.org/style/images/codeispoetry.png' ),
+                //'hint'      => array(
+                //    'title'     => 'Hint Title',
+                //    'content'   => 'This is a <b>hint</b> for the media field with a Title.',
+                //)
+            ),
+            array(
                 'id'       => 'opt-favicon',
                 'type'     => 'media',
                 'url'      => true,
@@ -371,16 +386,6 @@
             )
         )
     ) );
-
-
-    // -> START Promos Section
-    Redux::setSection( $opt_name, array(
-        'title' => __( 'Promos Section', 'redux-framework-demo' ),
-        'id'    => 'promos-section',
-        'desc'  => __( '', 'redux-framework-demo' ),
-        'icon'  => 'el el-home'
-    ) );
-
     
     // -> START Typography field
     Redux::setSection( $opt_name, array(
@@ -453,6 +458,26 @@
                 'all_styles'  => true,
                 'output'      => array( 'label' ),
                 'compiler'    => array( 'label' ),
+                'units'       => 'px',
+                'subtitle'    => __( '', 'redux-framework-demo' ),
+                'default'     => array(
+                    'color'       => '#333',
+                    'font-style'  => '700',
+                    'font-family' => 'Abel',
+                    'google'      => true,
+                    'font-size'   => '33px',
+                    'line-height' => '40px'
+                )
+            ),
+            array(
+                'id'          => 'opt-typography-a',
+                'type'        => 'typography',
+                'title'       => __( 'A', 'redux-framework-demo' ),
+                'google'      => true,
+                'font-backup' => true,                
+                'all_styles'  => true,
+                'output'      => array( 'a' ),
+                'compiler'    => array( 'a' ),
                 'units'       => 'px',
                 'subtitle'    => __( '', 'redux-framework-demo' ),
                 'default'     => array(

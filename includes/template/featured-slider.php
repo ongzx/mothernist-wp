@@ -1,4 +1,4 @@
-<section id="hero-slider" class="site-section">
+<section id="hero-slider">
 
   <div class="featured-slider">
 
@@ -29,10 +29,10 @@
         <div <?php post_class(); ?> id="post-<?php the_ID(); ?>" style="background:url(<?php echo $feat_img['0']; ?>) no-repeat; background-size:cover; background-position:center center;">
 
           <div class="play-btn">
-              <i class="fa fa-play-circle-o fa-5x"></i>
+              <i class="fa fa-play fa-5x"></i>
           </div>
 
-          <p class="slide-title"><?php the_title(); ?></p>
+          <p class="slide-title text-uppercase"><?php the_title(); ?></p>
 
           <!-- hidden input field to get videoUrl and videoPoster -->
           <input type="hidden" id="videoUrl" value="<?php echo $videoUrl; ?>">
@@ -46,7 +46,7 @@
 
     else :
       
-      echo '<p>Something must have been wrong!</p>';
+      echo get_template_part( '/includes/template/page-not-found' );
 
     endif;
 

@@ -1,0 +1,12 @@
+/* Admin CSS for WP backend of WPSS */
+
+.wpss img.left{ float:left; margin:0 15px 0 0;}
+.wpss .wpss-admin-nav span{float:right;}
+.wpss textarea#submit_txt, .wpss textarea#user_email_content{ height:75px;}
+
+p.wpss-breadcrumb{ font-style:italic;  background-color:white; }
+p.wpss-breadcrumb a.current{ text-decoration:none; }
+
+.wpss-bold{ font-weight: bold; }
+.wpss-link{ text-decoration: none; }
+.wpss-center{ text-align: center !important; }
